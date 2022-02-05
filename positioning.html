@@ -44,6 +44,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Positioning</title>
      <link rel="stylesheet" href="./styles/main.css">
+     <link rel="stylesheet" href="./styles/positioning-examples.css">
  </head>
  <body>
     <header>
@@ -66,32 +67,48 @@
                     In essence you can move the parent element (vessel/Skippy) around however much you want and your element will stay in the same relative position before and after the move. To illustrate this I will demonstrate with two examples using simple positional properties like <em>left</em> which moves en element the set value away from the left and <em>top</em> which does the same from the, you guessed it, top.</p>
                 <div class="example-container">
                     <div class="example">
-                        <div class="parent">Parent
+                        <div class="parent">Parent/Skippy
                             <div class="relative-child">Child</div>
                         </div>
                     </div>
-                    <div class="example relative2">
-                        <div class="parent">Parent
+                    <div class="example">
+                        <div class="parent relative2">Parent/Skippy
                             <div class="relative-child">Child</div>
                         </div>
                     </div>
                 </div>
-                <p>Looking at the two examples you can see how two elements with their position set to relative and the exact same positional properties can be in differing positions based on where their parent element is placed.
+                <p>Looking at the two examples you can see how two child elements with their position set to relative and the exact same positional properties can be in differing positions based on where their parent element is placed.
                     The relative positioning can be very useful if you for example need to move an icon or an image away form the corner of your web page or from a card element.</p>
           </section>
           <section>
               <h2>Absolute</h2>
               <p>Marking your element with the absolute positioning will not cause an old goblin of a priestly persuasion to suggest you should look out for one anotha (/high-tier-vagueness-reference). It will however allow you to move and position your element freely without affecting any of the other elements on your page. You can also refer to this as removing the element from the normal flow of the web page. Normally an absolutely positioned element will place itself relative to it's closest ancestor/parent and is able to overlap other elements. To visualise this you can imagine having two small boxes sitting next to eachother in a bigger box. when you set one of the boxes to absolute positioning it will immediately move to the upper left corner of the bigger box and overlap the other box. From there you can move the box around ewith the same properties as you used with the relative positioning to move the box around without affecting the other contents of the bigger box. Whew, that was a lot of boxes, let me step away from that analogy and show you in practice instead.</p>
               
+              
               <div class="example-container">
                 <div class="example">
                     <div class="parent">Parent
-                        <div class="relative-child">Child</div>
+                        <div class="child">Child</div>
+                        <div class="child child2">Child</div>
+
                     </div>
+                    
+
                 </div>
-                <div class="example relative2">
+                <div class="example">
                     <div class="parent">Parent
-                        <div class="relative-child">Child</div>
+                        <div class="child">Child</div>
+                        <div class="absolute-child">Child</div>
+
+                    </div>
+                    
+
+                </div>
+                <div class="example">
+                    <div class="parent">Parent
+                        <div class="child">Child</div>
+                        <div class="absolute-child absolute2">Child</div>
+
                     </div>
                 </div>
             </div>

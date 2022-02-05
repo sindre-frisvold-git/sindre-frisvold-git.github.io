@@ -1,0 +1,50 @@
+
+.example {
+    border-style: solid;
+    border-width: 1px;
+    margin: 20px;
+
+}
+.parent {
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    background-color: lightgoldenrodyellow;
+    height: 110px;
+    width: 110px;
+    margin: 20px
+}
+.relative-child {
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    background-color: lightgreen;
+    height: 70px;
+    width: 70px;
+    left: 10px;
+    top: 15px;
+}
+.relative2 {
+    left: 40px;
+    top: 10px;
+}
+.child, .absolute-child {
+    background-color: lightgreen;
+    height: 40px;
+    width: 40px;
+    border-style: solid;
+    border-width: 1px;
+}
+.child2 {
+    background-color: lightpink;
+    
+}
+.absolute-child {
+    background-color: lightpink;
+    position: absolute;
+    top: 30px;
+}
+.absolute2 {
+    right: 0px;
+    top: 0px;
+}
