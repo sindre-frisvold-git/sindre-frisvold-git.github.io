@@ -1,0 +1,113 @@
+<!-- 
+    Positioning, Absolutely relative or relatively absolute?
+    Well, if one thing needs to be fixed it is that horrible caption. At least now I have your attention so let's get right into it!
+
+    (the)Position property
+    When designging a website you will be conducting a diverse list of tasks including structuring, ensuring proper semantic flow is present, scripting cool stuff and, tacked onto that, a lot of debugging (Whew!/Yay).
+    When you are first starting out you can be sure that a decent portion of that debugging will include trying to get the componendts of your website to get to (and stay!) in the rignt position. There are many properties you can use to position elements with <abbr title="Cascading Style Sheets">CSS</abbr> but one that is going to affect the way they interact with your contant is the <em>position</em> property.
+    You have 5 values for the position property: Static, Relative, Absolute, Fixed and Sticky; today we will be exploring Relative, Absolute and Fixed. They all change the way your elements interact with eachother in their own way; understanding how they work should help you get those stubborn elements to go where you want them to and in turn help you design more user friendly, responsive and better looking web pages.
+    
+    Relative
+    Setting the position property to relative will make the element move relative to the current position of it's parent element. If you have no idea what the parent element is you can imagine it as the vessel your element is riding in. To help visualise this relationship you can imagine that you are a little baby kangaroo (joey?) sitting in your mother's pouch (we'll name her Skippy). If Skippy starts jumping around and you stay completely still you will still move around although relative to Skippy you have remained in the same position. Likewise you can shift 5cm to the right in the pouch after Skippy stopped moving around and you will have moved 5cm to the right of your (collective) relative positioning.
+    In essence you can move the parent element (vessel/Skippy) around however much you want and your element will stay in the same relative position before and after the move. To illustrate this I will demonstrate with two examples using simple positional properties like <em>left</em> which moves en element the set value away from the left and <em>top</em> which does the same from the, you guessed it!, top.
+
+    Example 1
+    Example 2
+    
+    Looking at the two examples you can see how two elements with their position set to relative and the exact same positional properties can be in differing positions based on where their parent element is placed.
+    The relative positioning can be very useful if you for example need to move an icon or an image away form the corner of your web page or from a card element.
+
+    Absolute
+    Marking your element with the absolute positioning will not cause an old goblin of a priestly persuasion to suggest you should look out for one anotha (</high-tier-vagueness-reference>). It will however allow you to move and position your element freely without affecting any of the other elements on your page. You can also refer to this as removing the element from the normal flow of the web page. Normally an absolutely positioned element will place itself relative to it's closest ancestor/parent and is able to overlap other elements. To visualise this you can imagine having two small boxes sitting next to eachother in a bigger box. when you set one of the boxes to absolute positioning it will immediately move to the upper left corner of the bigger box and overlap the other box. From there you can move the box around ewith the same properties as you used with the relative positioning to move the box around without affecting the other contents of the bigger box. Whew, that was a lot of boxes, let me step away from that analogy and show you in practice instead.
+
+    Example 1
+    Example 2
+
+    Absolute positioning can be quite useful for example when you want to position a "close" button in the upper right corner of an element without moving every other child of that element around. Imagine if you have a 5x5 sliding puzzle and every piece is in the right place except the bottom right and the open tile is in the upper left. With absolute positioning you can magically move your bottom right piece to the upper left and "win" the game, Yay! (Yes, yes, this analogy does not work completely in practice, but I believe it illustrates the concept well nonetheless!).
+
+    Fixed
+    Fixed positioning, commonly used for navigation bars works similarly to absolute positioning in the aspect that it removes your element from the normal flow of your web page. The difference lies in that an element with the fixed position will stay in the same place of the users screen regardless of where they scroll. This can be particularly useful for the aforemenetioned navigation bar or a chat functionality which can stay at the bottom of your page, both  accessible and discreet at the same time. To Illustrate fixed postitioning I am borrowing the clever idea from the W3 article I used to supplement this blog post. I would now like to direct your attention to the bottom right corner of this page if you haven't noticed it yet and observe how it acts when you scroll up and down. This is fixed positioning.
+
+    Add fixed element to bottom right corner.
+
+    Conclusion
+    Each value for the position property has it's own uses and functinality, knowing how and when to use them is a solid fundamental skill in designing well flowing, responsive web experiences. I am in no regard an expert on this topoic yet but I have done my best to explain the basics of the matter. If you spot any mistakes or errors please reach out so I can learn and correct the article to prevent any future readers from being misled. If you would like to discuss any of the content or have any questions feel free to contact me on Slack or any other medium we are connected, I love to hear other's perspectives and ideas around any topic.
+    Thank you for taking the time to read and thank you for bearing with my jokes and vague references.
+
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Positioning</title>
+     <link rel="stylesheet" href="./styles/main.css">
+ </head>
+ <body>
+    <header>
+        <div><img id="menu-btn" class="icon" src="./img/view_headline_black_24dp.svg" alt="menu button"></div>
+        <div><p>EDA 2022 Learning blog RE: Sindre</p></div>
+        <div><img class="icon" src="https://i.ibb.co/C9FyFts/Chorn-Logo1200.png" alt="Chorn Logo"></div>
+      </header>
+      <main>
+          <h1>Positioning, absolutely relative or relatively absolute?</h1>
+          <p>Well, if one thing needs to be fixed it is that horrible caption. At least now I have your attention so let's get right into it!</p>
+          <section>
+              <h2>(the) Position property</h2>
+              <p>When designging a website you will be conducting a diverse list of tasks including structuring, ensuring proper semantic flow is present, scripting cool stuff and, tacked onto that, a lot of debugging (Whew!/Yay).
+                When you are first starting out you can be sure that a decent portion of that debugging will include trying to get the componendts of your website to get to (and stay!) in the rignt position. There are many properties you can use to position elements with <abbr title="Cascading Style Sheets">CSS</abbr> but one that is going to affect the way they interact with your contant is the <em>position</em> property.
+                You have 5 values for the position property: Static, Relative, Absolute, Fixed and Sticky; today we will be exploring Relative, Absolute and Fixed. They all change the way your elements interact with eachother in their own way; understanding how they work should help you get those stubborn elements to go where you want them to and in turn help you design more user friendly, responsive and better looking web pages.</p>
+          </section>
+          <section>
+                <h2>Relative</h2>
+                <p>Setting the position property to relative will make the element move relative to the current position of it's parent element. If you have no idea what the parent element is you can imagine it as the vessel your element is riding in. To help visualise this relationship you can imagine that you are a little baby kangaroo (joey?) sitting in your mother's pouch (we'll name her Skippy). If Skippy starts jumping around and you stay completely still you will still move around although relative to Skippy you have remained in the same position. Likewise you can shift 5cm to the right in the pouch after Skippy stopped moving around and you will have moved 5cm to the right of your (collective) relative positioning.
+                    In essence you can move the parent element (vessel/Skippy) around however much you want and your element will stay in the same relative position before and after the move. To illustrate this I will demonstrate with two examples using simple positional properties like <em>left</em> which moves en element the set value away from the left and <em>top</em> which does the same from the, you guessed it, top.</p>
+                <div class="example-container">
+                    <div class="example">
+                        <div class="parent">Parent
+                            <div class="relative-child">Child</div>
+                        </div>
+                    </div>
+                    <div class="example relative2">
+                        <div class="parent">Parent
+                            <div class="relative-child">Child</div>
+                        </div>
+                    </div>
+                </div>
+                <p>Looking at the two examples you can see how two elements with their position set to relative and the exact same positional properties can be in differing positions based on where their parent element is placed.
+                    The relative positioning can be very useful if you for example need to move an icon or an image away form the corner of your web page or from a card element.</p>
+          </section>
+          <section>
+              <h2>Absolute</h2>
+              <p>Marking your element with the absolute positioning will not cause an old goblin of a priestly persuasion to suggest you should look out for one anotha (/high-tier-vagueness-reference). It will however allow you to move and position your element freely without affecting any of the other elements on your page. You can also refer to this as removing the element from the normal flow of the web page. Normally an absolutely positioned element will place itself relative to it's closest ancestor/parent and is able to overlap other elements. To visualise this you can imagine having two small boxes sitting next to eachother in a bigger box. when you set one of the boxes to absolute positioning it will immediately move to the upper left corner of the bigger box and overlap the other box. From there you can move the box around ewith the same properties as you used with the relative positioning to move the box around without affecting the other contents of the bigger box. Whew, that was a lot of boxes, let me step away from that analogy and show you in practice instead.</p>
+              
+              <div class="example-container">
+                <div class="example">
+                    <div class="parent">Parent
+                        <div class="relative-child">Child</div>
+                    </div>
+                </div>
+                <div class="example relative2">
+                    <div class="parent">Parent
+                        <div class="relative-child">Child</div>
+                    </div>
+                </div>
+            </div>
+
+              <p>Absolute positioning can be quite useful for example when you want to position a "close" button in the upper right corner of an element without moving every other child of that element around. Imagine if you have a 5x5 sliding puzzle and every piece is in the right place except the bottom right and the open tile is in the upper left. With absolute positioning you can magically move your bottom right piece to the upper left and "win" the game, Yay! (Yes, yes, this analogy does not work completely in practice, but I believe it illustrates the concept well nonetheless!).</p>
+          </section>
+          <section>
+              <h2>Fixed</h2>
+              <p>Fixed positioning, commonly used for navigation bars works similarly to absolute positioning in the aspect that it removes your element from the normal flow of your web page. The difference lies in that an element with the fixed position will stay in the same place of the users screen regardless of where they scroll. This can be particularly useful for the aforemenetioned navigation bar or a chat functionality which can stay at the bottom of your page, both  accessible and discreet at the same time. To Illustrate fixed postitioning I am borrowing the clever idea from the W3 article I used to supplement this blog post. I would now like to direct your attention to the bottom right corner of this page if you haven't noticed it yet and observe how it acts when you scroll up and down. This is fixed positioning.</p>
+
+          </section>
+          <section>
+              <h2>Conclusion</h2>
+              <p>Each value for the position property has it's own uses and functinality, knowing how and when to use them is a solid fundamental skill in designing well flowing, responsive web experiences. I am in no regard an expert on this topoic yet but I have done my best to explain the basics of the matter. If you spot any mistakes or errors please reach out so I can learn and correct the article to prevent any future readers from being misled. If you would like to discuss any of the content or have any questions feel free to contact me on Slack or any other medium we are connected, I love to hear other's perspectives and ideas around any topic.
+                Thank you for taking the time to read and thank you for bearing with my jokes and vague references.</p>
+          </section>
+      </main>
+ </body>
+ </html>
