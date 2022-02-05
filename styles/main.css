@@ -1,6 +1,8 @@
 html, body {
     margin: 0;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 header {
     width: 100%;
@@ -10,7 +12,17 @@ header {
     background-color: lightblue;
     padding: 0px 5px 0px 5px;
     box-sizing: border-box;
+    z-index: 1;
 
+}
+#nav-menu {
+    position:relative;
+    top: 10vh;
+}
+#bio {
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px;
 }
 .container {
     width: 100%;
@@ -21,11 +33,29 @@ header {
     height: 30px;
 }
 .navigation-bar {
-    display: none;
+    position: fixed;
+    background-color: lightblue;
+    height: 100vh;
+    width: 40vw;
+    top: 0;
+    padding-top: 10vh;
+    transform: translate3d(-40vw, 0, 0);
+    transition-duration: .3s;
+}
+.nav-link {
+    height: 5vh;
+    padding-left: 20px;
+}
+.navigation-bar.visible {
+    transform: translate3d(0, 0, 0);
 }
 .intro {
     text-align: center;
 
+}
+.bio-img {
+    width: 80px;
+    margin: auto;
 }
 .article-container {
     width: 100%;
@@ -36,6 +66,7 @@ header {
 }
 .article-tile {
     width: 90%;
+    max-width: 400px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -58,4 +89,25 @@ header {
     width: 100%;
     margin: auto;
 
+}
+@media only screen and (min-width: 768px) {
+    #bio {
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        width: 180px;
+        height: auto;
+        z-index: -1;
+    }
+    .navigation-bar {
+        transform: translate3d(0,-50vh,0);
+        width: 20vw;
+        height: auto;
+        background-color: lightblue;
+        top: 0vh;
+        border-bottom-right-radius: 20px;
+        padding-bottom: 5vh;
+
+    }
 }
