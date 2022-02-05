@@ -15,6 +15,13 @@ header {
     z-index: 1;
 
 }
+a {
+    text-decoration: none;
+    color: rgb(105, 33, 33);
+}
+article h1 {
+    text-align: center;
+}
 #nav-menu {
     position:relative;
     top: 10vh;
@@ -23,6 +30,8 @@ header {
     display: flex;
     margin: auto;
     margin-bottom: 30px;
+    font-size: 12px;
+    flex-direction: column;
 }
 .container {
     width: 100%;
@@ -98,7 +107,7 @@ header {
         top: 10vh;
         width: 180px;
         height: auto;
-        z-index: -1;
+    
     }
     .navigation-bar {
         transform: translate3d(0,-50vh,0);
