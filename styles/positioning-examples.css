@@ -3,7 +3,7 @@
     border-style: solid;
     border-width: 1px;
     margin: 20px;
-
+    font-size: 12px;
 }
 .parent {
     position: relative;
@@ -28,7 +28,7 @@
     left: 40px;
     top: 10px;
 }
-.child, .absolute-child {
+.child, .absolute-child, .absolute-child2 {
     background-color: lightgreen;
     height: 40px;
     width: 40px;
@@ -42,9 +42,17 @@
 .absolute-child {
     background-color: lightpink;
     position: absolute;
-    top: 30px;
+    top: 0;
 }
-.absolute2 {
+.absolute-child2 {
+    background-color: lightpink;
+    position: absolute;
     right: 0px;
+    top: 0px;
+}
+.absolute-child3 {
+    background-color: lightpink;
+    position: relative;
+    left: 0px;
     top: 0px;
 }
