@@ -156,6 +156,13 @@ article h1 {
         height: auto;
     
     }
+    .bio-img {
+        width: 50%;
+        margin: auto;
+    }
+    .intro {
+        font-size: 20px;
+    }
     .navigation-bar {
         transform: translate3d(0,-50vh,0);
         width: 20vw;
