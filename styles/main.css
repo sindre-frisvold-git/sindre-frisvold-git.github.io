@@ -6,7 +6,7 @@ html, body {
     font-family: 'Courier New', Courier, monospace;
     text-align: justify;
     font-size: 16px;
-    line-height: 1.35;
+    line-height: 1.55;
     font-weight: 100;
     background-color: rgb(247, 247, 247);
 }
@@ -28,7 +28,7 @@ a {
     color: rgb(105, 33, 33);
 }
 main {
-    padding: 10px;
+    padding: 20px;
     background-color: rgb(253, 253, 250);
 }
 footer {
