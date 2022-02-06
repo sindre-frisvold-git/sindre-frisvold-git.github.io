@@ -56,3 +56,11 @@
     left: 0px;
     top: 0px;
 }
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px;
+}
