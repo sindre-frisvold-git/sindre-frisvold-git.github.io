@@ -71,6 +71,7 @@ article h1 {
 }
 .caption {
     font-style: italic;
+
 }
 .navigation-bar {
     position: fixed;
@@ -119,8 +120,7 @@ article h1 {
     transform: scale(1.01);
 }
 .article-img {
-    max-width: 300px;
-    max-height: 150px;
+    max-width: 100%;
     margin: auto;
 }
 .img-container {
