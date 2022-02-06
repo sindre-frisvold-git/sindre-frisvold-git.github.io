@@ -3,7 +3,8 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
     font-size: 16px;
     line-height: 1.35;
     font-weight: 100;
@@ -28,7 +29,7 @@ a {
 }
 main {
     padding: 10px;
-    background-color: white;
+    background-color: rgb(253, 253, 250);
 }
 footer {
     display: flex;
