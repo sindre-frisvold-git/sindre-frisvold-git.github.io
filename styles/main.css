@@ -28,6 +28,9 @@ header {
     height: 8vh;
 
 }
+#menu-btn {
+    display: none;
+}
 a {
     text-decoration: none;
     color: rgb(105, 33, 33);
