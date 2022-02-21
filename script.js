@@ -27,6 +27,7 @@ const toggleNavBar = () =>{
 navBar.classList.toggle('visible')
 navBtn.classList.toggle('active-btn')
 document.querySelector('main').classList.toggle('dim')
+document.querySelector('#bio').classList.toggle('dim')
 // create active nav menu class
 // toggle this on click of menu button and rotate button
 }
