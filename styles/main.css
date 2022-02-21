@@ -15,7 +15,11 @@ html, body {
     font-weight: 100;
     background-color: rgb(247, 247, 247);
 }
+body {
+    margin-top: ;
+}
 header {
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -25,15 +29,20 @@ header {
     box-sizing: border-box;
     z-index: 1;
     font-size: 12px;
-    height: 8vh;
+    height: 6vh;
+    z-index: 2;
 
 }
 #nav-btn{
-    transition-duration: .35;
+    transition-duration: .3s;
+    z-index: 4;
 
 }
 .hidden{
     display: none;
+}
+.dim {
+    filter: blur(10px);
 }
 
 a {
@@ -42,7 +51,8 @@ a {
 }
 main {
     padding: 20px;
-    background-color: rgb(253, 253, 250);
+        margin: 6vh auto auto auto;
+        background-color: rgb(253, 253, 250);
 }
 footer {
     display: flex;
@@ -97,14 +107,18 @@ article h1 {
     position: fixed;
     background-color: lightblue;
     height: 100vh;
-    width: 40vw;
+    width: 60vw;
     top: 0;
     padding-top: 10vh;
-    transform: translate3d(-40vw, 0, 0);
+    transform: translate3d(-60vw, 0, 0);
     transition-duration: .3s;
+    z-index: 1;
+
 }
 .active-btn {
     transform: rotate(90deg);
+    z-index: 3;
+
 }
 nav a {
     color: black;
@@ -119,7 +133,7 @@ nav a {
 
 }
 .nav-text {
-    font-size: 16px;
+    font-size: 14px;
 }
 .nav-link:hover {
     background-color: rgb(255, 255, 124);
@@ -180,7 +194,7 @@ nav a {
     main {
         max-width: 50%;
         min-width: 800px;
-        margin: auto;
+        margin: 6vh auto auto auto;
         font-size: 16px;
         line-height: 2;
         box-shadow: 0px 0px 40px lightgray;
@@ -213,6 +227,9 @@ nav a {
         border-bottom-right-radius: 20px;
         padding-bottom: 5vh;
 
+    }
+    .nav-text {
+        font-size: 16px;
     }
     .code {
         font-size: 14px;

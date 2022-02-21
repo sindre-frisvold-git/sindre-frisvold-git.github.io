@@ -26,9 +26,9 @@ titleArray.forEach(el => {
 const toggleNavBar = () =>{
 navBar.classList.toggle('visible')
 navBtn.classList.toggle('active-btn')
+document.querySelector('main').classList.toggle('dim')
 // create active nav menu class
 // toggle this on click of menu button and rotate button
 }
 navMenuPopulator()
 navBtn.onclick = toggleNavBar
-let hi = window.URL.createObjectURL
