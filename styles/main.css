@@ -217,7 +217,7 @@ nav a {
         font-size: 20px;
     }
     .navigation-bar {
-        transform: translate3d(0,-70vh,0);
+        transform: translate3d(0,-200vh,0);
         width: 20vw;
         height: auto;
         background-color: lightblue;
